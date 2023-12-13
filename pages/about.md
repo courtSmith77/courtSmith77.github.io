@@ -7,8 +7,15 @@ weight: 3
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<br>
+Hi I am **{{ site.author.name }}** :wave:
+<br>
+
+I am a graduate student at Northwestern University pursuing a Master of Science in Robotics with a tentative graduation date of December 2024. I recently graduated from the Georgia Institute of Technology with a BS in Biomedical Engineering. I am interested in medical and wearable robotics, control system design, and robotic applications of machine learning and artificial intelligence.
+
+Outside of robotics, I love to be outdoors hiking or playing intramural sports. I also enjoying reading, watching reruns of Big Bang Theory, and baking!
+
+Message me via one of the media links below.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}

@@ -21,11 +21,11 @@ Outside of robotics, I love to be outdoors hiking or playing intramural sports. 
 
 Message me via one of the media links below.
 
-<div class="row">
+<!-- <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
 
 <div class="row">
 {% include about/timeline.html %}
-</div>
+</div> -->

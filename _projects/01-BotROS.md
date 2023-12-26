@@ -1,53 +1,39 @@
 ---
 name: BotROS - The Painting Robot
 tools: [ROS, Python, MoveIt, OpenCV, Apriltags, Robot Manipulation, Autonomy]
-image: 
-description: Implementing MoveIt in ROS2 iron on an Emika Franka Panda arm to autonomously paint an image.
+image: https://courtSmith77.github.io/inserts/dot_circle.gif
+description: ROS2 package to autonomously paint using an Emika Franka Panda arm.
 ---
 
 # BotROS
+<br>
 
 ## Description
-Description of the project
+The BotROS package uses an Emika Franka Panda arm to autonomously paint a given image. A realsense camera, apriltags, and computer vision were used to detect the location of the paint brushes and the individual paint colors on the paint palette. The listener node identifies the location of the brushes and palette in the robot frame. The colordetection node uses computer vision to create a mask around the palette and braodcasts the location of each color in the robot frame. The robot receives waypoints from the file created by the take_picture package which uses a Canny edge detector and OpenCV to descritize an image. Finally the iliketomoveitmoveit node utilizes MoveIt to excute the painting of the image inculding picking up a paint brush, getting paint, painting the colored waypoints, replacing the brush, and repeating for each color found in the image.
 
-<!-- This project is my capstone for the Master of Science in Robotics (MSR) program at Northwestern University. In this project, I built on [MoveIt Deep Grasps](https://ros-planning.github.io/moveit_tutorials/doc/moveit_deep_grasps/moveit_deep_grasps_tutorial.html) and implemented autonomous grasping on a 7-DOF Kinova Jaco 2 arm (j2s7s300). The aim of this project is to facilitate activities of daily living (ADLs) and assist people who may not be able to perform daily tasks.  
-This project was in collaboration with [argallab](https://www.argallab.northwestern.edu/) at Northwestern, which focuses on rehabilitative and assistive robotics.  
+In this project, my main focus was on computer vision and worksapce setup. I worked on the Apriltag intertegration into the tf tree and created the custom publisher to relay the location information. Additionally, I assisted in the state machine flow of the main node that connects all nodes and controls the robots. I also designed and constructed the brush holders that the robot had to grip as well as the brush holder.
 
-Originally designed in simulation only and on a Franka Panda robot, some of my modifications and additions from MoveIt Deep Grasps include:
-* Adaptation to the Kinova Jaco arm
-* Translation to live hardware trajectory execution
-* Live point cloud generation, segmentation, and filtering
-* YOLOv8 object detection to provide semantic labeling and segmentation parameters for the object to grasp
+Group Members: Courtney Smith, Nader Ahmed, Shail Dalal, Demiana Barsoum, Fiona Neylon
+<br>
+<br>
 
-This project largely uses ROS Noetic in C++ and Python.   -->
+## Full Live Demo
 
-## Live Demo
-
-add video from readme of project
-
-<!-- This is a live video of the demo along with the corresponding computer screencast showing YOLO object detection and visualization in Rviz.  
-
-<!-- cup live -->
-<div style="position: relative; padding-bottom: 56.25%; height:0; overflow: hidden;">
-    <center><video src="https://github.com/avazahedi/jaco_deep_grasp/assets/39091881/68a3b8e9-68c6-458e-a7c5-8815961fa89a" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video></center>
-</div>
+<center><video src="{{ site.url }}{{ site.baseurl }}/inserts/dot_circle.mp4">
+</video></center> 
 
 <br>
 <br>
 
-<!-- cup screencast -->
-<center>
-    <div style="position: relative; padding-bottom: 28.125%; height:0; overflow: hidden;">
-        <video src="https://github.com/avazahedi/jaco_deep_grasp/assets/39091881/3b010bf4-64fc-47da-9618-b5e05e032a34" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video>
-    </div>
-</center>
-
-<br> -->
-
-## Subsystems
+<!-- ## Subsystems
 
 ### MoveIt
 
 ### Computer Vision
 
-<br>
+<br> -->
+
+Check out the project more at our Github!
+
+<!-- hyperlink to github -->
+<a href="https://github.com/ME495-EmbeddedSystems/final-project-Group5">BotROS GitHub Repository</a>

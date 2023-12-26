@@ -19,7 +19,7 @@ I am a graduate student at Northwestern University pursuing a Master of Science 
 
 Outside of robotics, I love to be outdoors hiking or playing intramural sports. I also enjoying reading, watching reruns of Big Bang Theory, and baking!
 
-Message me via one of the media links below.
+<!-- Message me via one of the media links below. -->
 
 <!-- <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}

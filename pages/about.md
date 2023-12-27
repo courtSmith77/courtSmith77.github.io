@@ -19,6 +19,8 @@ I am a graduate student at Northwestern University pursuing a Master of Science 
 
 Outside of robotics, I love to be outdoors hiking or playing intramural sports. I also enjoying reading, watching reruns of Big Bang Theory, and baking!
 
+** Disclaimer: My Portfolio and <a href="https://github.com/courtSmith77">Github</a> are under construction so continue to check back for more updates! **
+
 <!-- Message me via one of the media links below. -->
 
 <!-- <div class="row">

@@ -11,5 +11,5 @@ Neural networks and various machine learning models are becoming increasingly po
 
 The model's weights and biases were learned using gradient descent. I also applied mini batching to decrease the model's training time. More of these techniques are broken down in the assignment writeup that can be found on Github.
 
-Check out the Code and Report <a href="https://github.com/courtSmith77/AStar-Algorithm">here!</a>
+Check out the Code and Report <a href="https://github.com/courtSmith77/NeuralNet-from-Scratch">here!</a>
 

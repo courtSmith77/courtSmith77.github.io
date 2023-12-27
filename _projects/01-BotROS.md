@@ -37,4 +37,4 @@ Group Members: Courtney Smith, Nader Ahmed, Shail Dalal, Demiana Barsoum, Fiona 
 Check out the project more at our Github!
 
 <!-- hyperlink to github -->
-<a href="https://github.com/ME495-EmbeddedSystems/final-project-Group5">BotROS GitHub Repository</a>
+<a href="https://github.com/courtSmith77/BotROS">BotROS GitHub Repository</a>

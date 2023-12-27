@@ -1,7 +1,7 @@
 ---
 name: A* Search Algorithm Implementation
 tools: [Python, Artificial Intelligence, Mobile Robots, Search, Path Planning]
-image: 
+image: https://courtSmith77.github.io/inserts/astar_skinny.png
 description: Applying A* Algorithm on Real Robot data
 ---
 

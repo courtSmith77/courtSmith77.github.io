@@ -1,7 +1,7 @@
 ---
 name: Deep Learning for WBAM Estimation
 tools: [Python, MATLAB, Machine Learning, Wearable Robotics, Wearable Sensors, PyTorch]
-image: 
+image: https://courtSmith77.github.io/inserts/TCN_diagram.png
 description: Optimized a Temporal Convolutional Network (TCN) to estimate Whole Body Angular Momentum (WBAM) from wearable sensors
 ---
 

@@ -19,7 +19,9 @@ Group Members: Courtney Smith, Nader Ahmed, Shail Dalal, Demiana Barsoum, Fiona 
 
 ## Full Live Demo
 
-<center><video src="{{ site.url }}{{ site.baseurl }}/inserts/dot_circle.mp4">
+<center><video src="
+https://github.com/courtSmith77/courtSmith77.github.io/assets/144190404/6394191a-93e4-427d-9b75-c36b89706373
+">
 </video></center> 
 
 <br>

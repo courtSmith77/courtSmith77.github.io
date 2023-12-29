@@ -14,7 +14,7 @@ A* is a search algorithm used to find a path between a given start and end node 
 <center><img src="{{ site.url }}{{ site.baseurl }}/inserts/All_AStar.png"/></center>
 <br>
 
-### Online Simultaneous Path Planning and Motion Contoller
+### Online A* Simultaneous Path Planning and Motion Contoller
 <br>
 <center><img src="{{ site.url }}{{ site.baseurl }}/inserts/AStar_Path_Planning.png"/></center>
 <br>

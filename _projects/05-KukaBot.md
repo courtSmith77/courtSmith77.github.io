@@ -19,6 +19,7 @@ The goal of this project was to use modern screw theory to generate the desired 
 
 <center>
     <div style="position: relative; padding-bottom: 28.125%; height:0; overflow: hidden;">
-        <video src="https://github.com/courtSmith77/courtSmith77.github.io/assets/144190404/fb37594d-d09f-4ebd-a2ed-cee12fe6d586" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video>
+        <video src="![kuka_gif](https://github.com/courtSmith77/courtSmith77.github.io/assets/144190404/c0cbd415-e795-4416-bb4b-37ec833cbc8b)
+" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video>
     </div>
 </center>

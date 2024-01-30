@@ -8,7 +8,7 @@ description: ROS2 package to autonomously paint using an Emika Franka Panda arm.
 # BotROS
 <br>
 <!-- hyperlink to github -->
-<a href="https://github.com/courtSmith77/BotROS">GitHub Repository</a>
+<a href="https://github.com/nahder/BotROS-Franka">GitHub Repository</a>
 
 <br>
 <center><img src="{{ site.url }}{{ site.baseurl }}/inserts/BotROS_Picture.png"/></center>

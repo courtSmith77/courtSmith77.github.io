@@ -24,7 +24,7 @@ Over a span of 10 weeks, the project focused on achieving autonomous navigation 
 
 <center>
     <div style="position: relative; padding-bottom: 28.125%; height:0; overflow: hidden;">
-        <video src="" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video>
+        <video src="https://github.com/courtSmith77/courtSmith77.github.io/assets/144190404/93db4aef-e4eb-40c1-b796-5ee2be089a02" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video>
     </div>
 </center>
 

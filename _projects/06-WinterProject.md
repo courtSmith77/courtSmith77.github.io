@@ -32,8 +32,9 @@ Over a span of 10 weeks, the project focused on achieving autonomous navigation 
 <br>
 
 ## Project Subsystems
+<br>
 
-#### Arrow Detection and Classification
+#### <b>Arrow Detection and Classification</b>
 The Tello drone onboard camera records at 30 frames per second with a video resolution at 1280x720 pixels. A custom dataset was compiled containing 915 images of the cardinal directions. Using <a href="https://www.cvat.ai/">CVAT</a>, each arrow in the images was delineated with a bounding rectangle.
 <br>
 
@@ -44,11 +45,11 @@ Employing an 80/20 train-test-split on the dataset, I trained and validated the 
 During real-time operation, the arrow detection mechanism predominantly pinpointed the location of arrows rather than reliably determining their directional orientation. This outcome was anticipated, given YOLO’s architecture which is designed to detect objects irrespective of their orientation or position. Therefore, the principal takeaway from this trained model was the detection box rather than the classification.
 <br>
 
-##### Creating Classification Dataset
+##### <u>Creating Classification Dataset</u>
 To train the YOLO classifier, I utilized the previously trained arrow detection model in conjunction with traditional computer vision techniques. First the original image was inputted into the detection model. Subsequently, the resulting detection box was used to execute the OpenCV functions `getPerspectiveTransform` and `warpPerspective` to isolate and extract the portion of the original image contained within the detection box. These extracted images were then annotated and saved for training purposes.
 <br>
 
-##### Arrow Classification
+##### <u>Arrow Classification</u>
 An 80/20 train-test-split was applied to the cropped image dataset to train and validate the Ultralytics YOLOv8 <a href="https://www.cvat.ai/">Classification Model</a> using a custom dataset. The focal point of interest from this model's predictions was the class ID, represented by an integer ranging from 0 to 3, where 0 denotes "down," 1 denotes "left," 2 denotes "right," and 3 denotes "up." 
 <br>
 <br>

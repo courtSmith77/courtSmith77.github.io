@@ -15,7 +15,7 @@ Hi I am **{{ site.author.name }}** :wave:
 <center><img src="{{ site.url }}{{ site.baseurl }}/inserts/Grad_Photo.jpg" width=420/></center>
 <br>
 
-I am a graduate student at Northwestern University pursuing a Master of Science in Robotics with a tentative graduation date of December 2024. I recently graduated from the Georgia Institute of Technology with a BS in Biomedical Engineering. I am interested in medical and wearable robotics, control system design, and robotic applications of machine learning and artificial intelligence.
+I am a graduate student at Northwestern University pursuing a Master of Science in Robotics with a tentative graduation date of December 2024. I recently graduated from the Georgia Institute of Technology with a BS in Biomedical Engineering and a double minor in Robotics and Economics. I am interested in medical and wearable robotics, control system design, and robotic applications of machine learning and artificial intelligence.
 
 Outside of robotics, I love to be outdoors hiking or playing intramural sports. I also enjoying reading, watching reruns of Big Bang Theory, and baking!
 

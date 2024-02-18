@@ -37,7 +37,7 @@ Over a span of 10 weeks, the project focused on achieving autonomous navigation 
 The Tello drone onboard camera records at 30 frames per second with a video resolution at 1280x720 pixels. A custom dataset was compiled containing 915 images of the cardinal directions. Using <a href="https://www.cvat.ai/">CVAT</a>, each arrow in the images was delineated with a bounding rectangle.
 <br>
 
-##### Arrow Detection
+##### <u>Arrow Detection</u>
 Employing an 80/20 train-test-split on the dataset, I trained and validated the Ultralytics YOLOv8 <a href="https://docs.ultralytics.com/tasks/detect/">Detection Model</a> on the custom dataset. The primary outcome of interest from this model was the bounding box, denoting the bottom left and top right corners (x1, y1, x2, y2) of the detected arrow.
 <br>
 
@@ -45,7 +45,7 @@ During real-time operation, the arrow detection mechanism predominantly pinpoint
 <br>
 
 ##### Creating Classification Dataset
-To train the YOLO classifier, I utilized the previously trained arrow detection model in conjunction with traditional computer vision techniques. First the original image was inputted into the detection model. Subsequently, the resulting detection box was used to execute the OpenCV functions getPerspectiveTransform and warpPerspective to isolate and extract the potion of the original image contained within the detection box. These extracted images were then annotated and saved for training purposes.
+To train the YOLO classifier, I utilized the previously trained arrow detection model in conjunction with traditional computer vision techniques. First the original image was inputted into the detection model. Subsequently, the resulting detection box was used to execute the OpenCV functions `getPerspectiveTransform` and `warpPerspective` to isolate and extract the portion of the original image contained within the detection box. These extracted images were then annotated and saved for training purposes.
 <br>
 
 ##### Arrow Classification

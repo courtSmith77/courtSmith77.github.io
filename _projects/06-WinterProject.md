@@ -49,6 +49,10 @@ During real-time operation, the arrow detection mechanism predominantly pinpoint
 To train the YOLO classifier, I utilized the previously trained arrow detection model in conjunction with traditional computer vision techniques. First the original image was inputted into the detection model. Subsequently, the resulting detection box was used to execute the OpenCV functions `getPerspectiveTransform` and `warpPerspective` to isolate and extract the portion of the original image contained within the detection box. These extracted images were then annotated and saved for training purposes.
 <br>
 
+<br>
+<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/cascade.png"/></center>
+<br>
+
 ##### <u>Arrow Classification</u>
 An 80/20 train-test-split was applied to the cropped image dataset to train and validate the Ultralytics YOLOv8 <a href="https://www.cvat.ai/">Classification Model</a> using a custom dataset. The focal point of interest from this model's predictions was the class ID, represented by an integer ranging from 0 to 3, where 0 denotes "down," 1 denotes "left," 2 denotes "right," and 3 denotes "up." 
 <br>

@@ -52,7 +52,7 @@ To train the YOLO classifier, I utilized the previously trained detection model 
 Originally, a single classification model was used to classify the symbol, however the special symbols were consistently confused for an arrow direction. To prevent this, two separate models were trained: one for arrow classification and one for special symbol classification. To determine which model to use to classify the symbol, I looked at the ratio of width to length of the boxing box detected. The special symbols have a square-like shape with ratios between 0.8 and 1.2 whereas the arrows have a rectangular shape falling well below and well above the square-like ratio. 
 <br>
 <br>
-<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/cascade.png"/></center>
+<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/new_cascade.png"/></center>
 <br>
 
 #### <u>Arrow Classification</u>

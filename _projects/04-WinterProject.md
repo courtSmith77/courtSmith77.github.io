@@ -10,12 +10,8 @@ description: Tello drone to traverse an obstacle coourse.
 <!-- hyperlink to github -->
 <a href="https://github.com/courtSmith77/Drone-Obstacle-Avoidance">GitHub Repository</a>
 
-<!-- <br>
-<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/BotROS_Picture.png"/></center>
-<br> -->
 
-## Description
-Over a span of 10 weeks, the project focused on achieving autonomous navigation through a series of obstacles. The primary tools employed were YOLO's deep convolutional networks for accurate object detection and classification, alongside the Tello SDK for precise drone control. Each obstacle has an arrow label indicating which direction the drone should move to avoid it. Additionally, there are two special symbols: one instructs the drone to turn around and fly back through the course , while the other signals the completion of the course and prompts the drone to flip backwards.
+Over a span of 10 weeks, the project focused on achieving autonomous navigation through a series of obstacles. The primary tools employed were YOLO's deep convolutional networks for accurate symbol detection and classification, alongside the Tello SDK for precise drone control. Arrows indicate drone movement directions, with special symbols for turning around or finishing the course.
 <br>
 <br>
 

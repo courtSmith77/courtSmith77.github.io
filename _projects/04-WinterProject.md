@@ -21,7 +21,7 @@ Over a span of 10 weeks, the project focused on achieving autonomous navigation 
 ## Project Subsystems
 <br>
 
-### <b>Symbol Detection and Classification</b>
+#### <b>Symbol Detection and Classification</b>
 The Tello drone’s onboard camera records at 30 frames per second with a video resolution at 1280x720 pixels. A custom dataset was compiled containing approximately 1300 images of the cardinal directions and special symbols. Using <a href="https://www.cvat.ai/">CVAT</a>, each arrow in the images was delineated with a bounding rectangle.
 <br>
 
@@ -56,7 +56,7 @@ Similarly, an 80/20 train-test-split was applied to the cropped image dataset to
 <br>
 <br>
 
-### <b>Drone Control</b>
+#### <b>Drone Control</b>
 Since the drone lacks an onboard depth sensor, all control decisions are based on the size and location of the detection box. When commanding the drone, motion in the x (+x forward), y (+y left), and z (+z up) planes is taken into consideration. 
 <br>
 

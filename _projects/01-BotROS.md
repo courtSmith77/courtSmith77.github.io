@@ -10,21 +10,17 @@ description: ROS2 package to autonomously paint using an Emika Franka Panda arm.
 <!-- hyperlink to github -->
 <a href="https://github.com/nahder/BotROS-Franka">GitHub Repository</a>
 
+For a final project in Northwestern University's ME495 Embedded Systems in Robotics class, my team programmed a 7-DoF Emika Franka Panda arm to autonomously paint a given image. 
+<br>
 
 <div style="display: flex;">
     <div style="flex: 1; text-align: right;">
         <img src="{{ site.url }}{{ site.baseurl }}/inserts/BotROS_Picture.png"/>
     </div>
     <div style="flex: 1;">
-        For a final project in Northwestern University's ME495 Embedded Systems in Robotics class, my team programmed a 7-DoF Emika Franka Panda arm to autonomously paint a given image. 
-
         BotROS (the robot's name), must pick up a paint brush, dip it into paint with the designated color, and begin painting the image. It will get more paint on the brush every 8 dots, then continue the painting. Once the first color has completed, BotROS will return the paint brush to the holder, pick up the next paint brush, and paint the dots of the second color before replacing the brush and completing the painting.
     </div>
 </div>
-
-<!-- <br>
-<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/BotROS_Picture.png"/></center>
-<br> -->
 
 
 <br>

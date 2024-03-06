@@ -82,7 +82,7 @@ In addition to direction control, to ensure correct avoidance of the obstacle, t
     </div>
     <div style="flex: 1; text-align: right;">
         <img src="https://courtSmith77.github.io/inserts/flip_and_rotate.gif" alt="Special Control" />
-        <figcaption>(Left) Rotating 180 degrees. (Right) Flipping backwards.</figcaption>
+        <figcaption style="font-size: 12px;">(Left) Rotating 180 degrees. (Right) Flipping backwards.</figcaption>
     </div>
 </div>
 <br>

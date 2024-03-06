@@ -29,6 +29,10 @@ The Tello drone’s onboard camera records at 30 frames per second with a video 
 Employing an 80/20 train-test-split on the dataset, I trained and validated the Ultralytics YOLOv8 <a href="https://docs.ultralytics.com/tasks/detect/">Detection Model</a> on the custom dataset. The primary outcome of interest from this model was the bounding box, denoting the bottom left and top right corners (x1, y1, x2, y2) of the detected arrow or special symbol.
 <br>
 
+![Symbol Detection](https://courtSmith77.github.io/inserts/symbol_detection.gif "Real-time symbol detection from the drone live feed.")
+
+
+<br>
 During real-time operation, the detection mechanism predominantly located objects rather than reliably determining their specific symbol classification. This outcome was anticipated, given YOLO’s architecture which is designed to detect objects irrespective of their orientation or position. Therefore, the principal takeaway from this trained model was the detection box rather than the classification.
 <br>
 
@@ -78,6 +82,7 @@ In addition to direction control, to ensure correct avoidance of the obstacle, t
     </div>
     <div style="flex: 1; text-align: right;">
         <img src="https://courtSmith77.github.io/inserts/flip_and_rotate.gif" alt="Special Control" />
+        <figcaption>(Left) Rotating 180 degrees. (Right) Flipping backwards.</figcaption>
     </div>
 </div>
 <br>

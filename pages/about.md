@@ -20,7 +20,9 @@ I am a graduate student at Northwestern University pursuing a Master of Science 
 Outside of robotics, I love to be outdoors hiking or playing intramural sports. I also enjoying reading, watching reruns of Big Bang Theory, and baking!
 
 <a href="https://github.com/courtSmith77">Github</a>
+<br>
 <a href="https://www.linkedin.com/in/courtney-smith-533269175/">LinkedIn</a>
+<br>
 [Resume](https://courtSmith77.github.io/inserts/Resume_Spring_2024.pdf)
 
 <!-- Message me via one of the media links below. -->

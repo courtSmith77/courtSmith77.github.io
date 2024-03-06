@@ -75,11 +75,22 @@ In addition to direction control, to ensure correct avoidance of the obstacle, t
 <br>
 
 #### <u>Special Symbol Control</u>
-When a special symbol is detected, the drone will center itself on the symbol and approaches within a specific distance before executing the desired action. Similar to arrow orthogonal control, this controller looks at the center of the detection box relative to the center of the live image center. If it is outside the tuned threshold in either the vertical and horizontal planes, it will move to center itself. Once the area of the of the image gets within a specific threshold the robot will execute the action linked to the specific symbol.
-** Disclaimer: When the “star” symbol is detected, and it is time to flip, the drone will confirm with the user to make sure it is safe to complete the flip.
+
 <br>
 
-![Special Control Maneuvers](https://courtSmith77.github.io/inserts/flip_and_rotate.gif)
+<!-- ![Special Control Maneuvers](https://courtSmith77.github.io/inserts/flip_and_rotate.gif) -->
+
+<div style="display: flex;">
+    <div style="flex: 1;">
+        When a special symbol is detected, the drone will center itself on the symbol and approaches within a specific distance before executing the desired action. Similar to arrow orthogonal control, this controller looks at the center of the detection box relative to the center of the live image center. If it is outside the tuned threshold in either the vertical and horizontal planes, it will move to center itself. Once the area of the of the image gets within a specific threshold the robot will execute the action linked to the specific symbol.
+    </div>
+    <div style="flex: 1; text-align: right;">
+        <img src="https://courtSmith77.github.io/inserts/flip_and_rotate.gif" alt="Special Control" width="200">
+    </div>
+</div>
+<br>
+** Disclaimer: When the “star” symbol is detected, and it is time to flip, the drone will confirm with the user to make sure it is safe to complete the flip.
+
 
 <br>
 

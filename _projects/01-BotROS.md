@@ -14,10 +14,12 @@ For a final project in Northwestern University's ME495 Embedded Systems in Robot
 <br>
 
 <div style="display: flex;">
-    <div style="flex: 1; text-align: right;">
+    <div style="flex: 1; text-align: left;">
         <img src="{{ site.url }}{{ site.baseurl }}/inserts/BotROS_Picture.png"/>
     </div>
     <div style="flex: 1;">
+        <br>
+        <br>
         BotROS (the robot's name), must pick up a paint brush, dip it into paint with the designated color, and begin painting the image. It will get more paint on the brush every 8 dots, then continue the painting. Once the first color has completed, BotROS will return the paint brush to the holder, pick up the next paint brush, and paint the dots of the second color before replacing the brush and completing the painting.
     </div>
 </div>

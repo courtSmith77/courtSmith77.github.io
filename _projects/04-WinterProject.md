@@ -42,7 +42,8 @@ To train the YOLO classifier, I utilized the previously trained detection model 
 <br>
 Originally, a single classification model was used to classify the symbol, however the special symbols were consistently confused for an arrow direction. To prevent this, two separate models were trained: one for arrow classification and one for special symbol classification. To determine which model to use to classify the symbol, I looked at the ratio of width to length of the boxing box detected. The special symbols have a square-like shape with ratios between 0.8 and 1.2 whereas the arrows have a rectangular shape falling well below and well above the square-like ratio. 
 <br>
-<br>
+
+#### Classification Cascade
 <center><img src="{{ site.url }}{{ site.baseurl }}/inserts/new_cascade.png"/></center>
 <br>
 
@@ -57,6 +58,10 @@ Similarly, an 80/20 train-test-split was applied to the cropped image dataset to
 
 ### <b>Drone Control</b>
 Since the drone lacks an onboard depth sensor, all control decisions are based on the size and location of the detection box. When commanding the drone, motion in the x (+x forward), y (+y left), and z (+z up) planes is taken into consideration. 
+<br>
+
+#### Control System Diagram
+<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/control_flow_diagram.png"/></center>
 <br>
 
 #### <u>Arrow Control</u>

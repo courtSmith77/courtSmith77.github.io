@@ -14,7 +14,7 @@ description: Tello drone to traverse an obstacle coourse.
 Over a span of 10 weeks, the project focused on achieving autonomous navigation through a series of obstacles. The primary tools employed were YOLO's deep convolutional networks for accurate symbol detection and classification, alongside the Tello SDK for precise drone control. Arrows indicate drone movement directions, with special symbols for turning around or finishing the course.
 <br>
 
-<center><iframe src="https://www.youtube.com/embed/siTZoEZFah8?si=i0K699tnvzIae1cj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YRXVQPlMdGM?si=TOQGWeP4UVTPoi23" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br>
 

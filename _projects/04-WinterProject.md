@@ -14,7 +14,7 @@ description: Tello drone to traverse an obstacle coourse.
 Over a span of 10 weeks, the project focused on achieving autonomous navigation through a series of obstacles. The primary tools employed were YOLO's deep convolutional networks for accurate symbol detection and classification, alongside the Tello SDK for precise drone control. Arrows indicate drone movement directions, with special symbols for turning around or finishing the course.
 <br>
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/siTZoEZFah8?si=i0K699tnvzIae1cj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<center><iframe src="https://www.youtube.com/embed/siTZoEZFah8?si=i0K699tnvzIae1cj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
 <br>
 
@@ -76,7 +76,7 @@ In addition to direction control, to ensure correct avoidance of the obstacle, t
 
 <center>
 <img src="{{ site.url }}{{ site.baseurl }}/inserts/flight_dir.png"/>
-<figcaption style="font-size: 12px;">Arrow and orthogonal direction for drone control.</figcaption>
+<figcaption style="font-size: 16px;">Arrow and orthogonal direction for drone control.</figcaption>
 </center>
 <br>
 
@@ -86,7 +86,7 @@ When a special symbol is detected, the drone will center itself on the symbol an
 
 <center>
 <img src="https://courtSmith77.github.io/inserts/flip_and_rotate.gif" alt="Special Control" />
-<figcaption style="font-size: 12px;">(Left) Rotating 180 degrees. (Right) Flipping backwards.</figcaption>
+<figcaption style="font-size: 16px;">(Left) Rotating 180 degrees. (Right) Flipping backwards.</figcaption>
 </center>
 <br>
 ** Disclaimer: When the “star” symbol is detected, and it is time to flip, the drone will confirm with the user to make sure it is safe to complete the flip.

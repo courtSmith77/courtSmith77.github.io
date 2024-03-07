@@ -2,7 +2,7 @@
 name: Drone Obstacle Avoidance
 tools: [Python, OpenCV, Machine Learning, ROS2]
 image: https://courtSmith77.github.io/inserts/drone_longer.gif
-description: Tello drone to traverse an obstacle coourse.
+description: Tello drone to autonomously traverse an obstacle course.
 ---
 
 # Drone Obstacle Avoidance

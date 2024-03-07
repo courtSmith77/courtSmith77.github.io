@@ -16,6 +16,12 @@ For a capstone project in Northwestern University's Robotics Manipulation class,
 The goal of this project was to use modern screw theory to generate the desired reference trajectory for the end-effector to pick up and place a block in a target location. A feedforward + PI controller was used to minimize error between the actual trajectory and the reference trajectory. An ODE was used to simulate the physics of the youBot base, manipulator, and gripper. The simulation was performed in CoppeliaSim.
 
 ### Solution
-<center>
+<!-- <center>
 <img src="https://courtSmith77.github.io/inserts/kuka_gif.gif" alt="Kuka Solution" />
+</center> -->
+
+<center>
+    <div style="position: relative; padding-bottom: 28.125%; height:0; overflow: hidden;">
+        <video src="https://github.com/courtSmith77/courtSmith77.github.io/assets/144190404/c51cd971-4313-48b0-98a3-1d3e0593ec38" controls style="position: absolute; top:0; left:0; width: 100%; height: 100%;"></video>
+    </div>
 </center>

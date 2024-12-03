@@ -155,11 +155,11 @@ Compare Modes:
 
 <br>
 
-#### <u>Spring-Damper System<u>
+##### <u>Spring-Damper System<u>
 <center><img src="{{ site.url }}{{ site.baseurl }}/inserts/spring_damper_system_image.png"/></center>
 <br>
 
-#### <u>Impendance Control Algorithm<u>
+##### <u>Impendance Control Algorithm<u>
 <center><img src="{{ site.url }}{{ site.baseurl }}/inserts/impedance_algorithm_equation.png"/></center>
 <br>
 

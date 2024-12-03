@@ -76,7 +76,7 @@ To condense the task, the demonstrations collected focused on correctly orientin
 As mentioned above, the Push T task utilizes both image and position data as input observations. A Realsense d435 was used to capture the scene images and a Realsense d405 was used to capture the end effector images. Both cameras are run at 30 fps but are downsampled to 10 hz to match the frequency used in CITE PAPER. The scene image was cropped to exclude any extraneous objects in the image and then futher resized to decrease the model size and computation. The end effector image was resized for the same reason.
 
 ##### Image Resizing
-<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/obs_data_image_resize.jpeg"/></center>
+<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/obs_data_image_resize.png"/></center>
 <br>
 
 Position control is used to command the robot arm, so the end effector of the robot is used as both an observation and action during training and only an observation during inference. The end effector position is collected from the TF tree in the ROS2 framework sampled at 10 hz.

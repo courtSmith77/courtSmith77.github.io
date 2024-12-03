@@ -68,8 +68,12 @@ This task was chosen to see if we could successfully replicate the results from 
 
 To condense the task, the demonstrations collected focused on correctly orienting the T block with it placed within 4 centimeters of the goal pose at various orientations up to 180 degrees. The model was trained on 101 demonstrations varying in length from 45 seconds to 2 minutes.
 
-** attach a series of starting images displaying various starting positions **
+<center>
+<img src="{{ site.url }}{{ site.baseurl }}/inserts/dp_starting_poses.png"/>
+<figcaption style="font-size: 16px;">Training data subset of various starting poses.</figcaption>
+</center>
 <br>
+
 
 ### <u>Data Streams</u>
 <br>

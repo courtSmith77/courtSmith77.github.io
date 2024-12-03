@@ -21,6 +21,7 @@ description: Implement diffusion policy models on specialized task using a Frank
 <br>
 <!-- hyperlink to github -->
 <a href="https://github.com/courtSmith77/diffusion_policy">Diffusion Policy Repository</a>
+<br>
 <a href="https://github.com/courtSmith77/FrankaTeleop">Franka Arm Control Repository</a>
 
 Demonstration learning has grown in popularity to illustrate how complex models can teach robots specific complex tasks through successful demonstrations. This project focused on implementing the diffusion policy developed by scientist at Columbia, MIT, and Toyota Research Institue to complete a task using the 7 Degree of Freedom Emika Franka Panda Arm (ADD LINK TO PAPER). A ROS2 frame work was developed to communicate data streams between the diffusion model and the Franka controller. The following sections will outline the various technologies used to complete this project.
@@ -28,7 +29,7 @@ Demonstration learning has grown in popularity to illustrate how complex models 
 <br>
 
 
-## <u>Table of Contents<u>
+## <u>Table of Contents</u>
 <br>
 1. Diffusion Policy
 2. Data Collection
@@ -44,7 +45,7 @@ Demonstration learning has grown in popularity to illustrate how complex models 
 7. Citations
 <br>
 
-## <b>Diffusion Policy<b>
+## <b>Diffusion Policy</b>
 <a href="https://github.com/courtSmith77/diffusion_policy">Diffusion Policy Repository</a>
 <br>
 
@@ -58,10 +59,10 @@ Outputs (actions)
 Breifly mention posiiton control of the franka to explain the end effector position as inputs and outputs
 <br>
 
-## <b>Data Collection<b>
+## <b>Data Collection</b>
 <br>
 
-### <u>Push T task<u>
+### <u>Push T task</u>
 <br>
 This task was chosen to see if we could successfully replicate the results from the Diffusion Policy paper cited above. In this task the robot pushes a T block into a designated goal pose. This task utilizes both camera data as well as position data streams which requires a large model specifically to handle the image inputs. Additionally, this task shows the robots ability to adapt to changing environments and perform precise movements.
 
@@ -70,7 +71,7 @@ To condense the task, the demonstrations collected focused on correctly orientin
 ** attach a series of starting images displaying various starting positions **
 <br>
 
-### <u>Data Streams<u>
+### <u>Data Streams</u>
 <br>
 As mentioned above, the Push T task utilizes both image and position data as input observations. A Realsense d435 was used to capture the scene images and a Realsense d405 was used to capture the end effector images. Both cameras are run at 30 fps but are downsampled to 10 hz to match the frequency used in CITE PAPER. The scene image was cropped to exclude any extraneous objects in the image and then futher resized to decrease the model size and computation. The end effector image was resized for the same reason.
 
@@ -81,13 +82,13 @@ As mentioned above, the Push T task utilizes both image and position data as inp
 Position control is used to command the robot arm, so the end effector of the robot is used as both an observation and action during training and only an observation during inference. The end effector position is collected from the TF tree in the ROS2 framework sampled at 10 hz.
 <br>
 
-### <u>Collection Frameworks<u>
+### <u>Collection Frameworks</u>
 <br>
 Two data collection frameworks were developed. Mouse control has the user demonstrate the task by teleoping the robot in the x and y axes with a computer mouse.
 The second method utilizes a novel impedance controller to remote control one robot arm with another robot arm. See the Appendix for more information on this topic
 <br>
 
-## <b>Franka Controller<b>
+## <b>Franka Controller</b>
 <a href="https://github.com/courtSmith77/FrankaTeleop">Franka Arm Control Repository</a>
 <br>
 
@@ -96,7 +97,7 @@ Moveit Plan Cartesian Path and Execute Trajectory
 ** Diagram of ROS framework: diffusion_policy, action_franka, model_input **
 <br>
 
-## <b>Results<b>
+## <b>Results</b>
 
 <br>
 ** official model used and trained
@@ -104,12 +105,12 @@ Moveit Plan Cartesian Path and Execute Trajectory
 ** image of actions commanded and franka position
 <br>
 
-## <b>Future Works<b>
+## <b>Future Works</b>
 <br>
 
 <br>
 
-## <b>Appendix: Impedance Controller on Emika Panda Arm<b>
+## <b>Appendix: Impedance Controller on Emika Panda Arm</b>
 <br>
 Compare Modes:
 - White Light mode (default)
@@ -121,7 +122,7 @@ Compare Modes:
 ** include diagram of decreased magnitude of forces in the directions across modes
 <br>
 
-## <b>Citations<b>
+## <b>Citations</b>
 - diffusion policy
 - jihai
 - graham

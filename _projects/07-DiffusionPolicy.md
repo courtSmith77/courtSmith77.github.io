@@ -5,8 +5,24 @@ image: https://courtSmith77.github.io/inserts/diffusion_thumbnail.gif
 description: Implement diffusion policy models on specialized task using a Franka Panda Arm.
 ---
 
-# Under Construction, will be done by 12/12
+# Under Construction, will be done by 12/12/2024
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -27,6 +43,10 @@ description: Implement diffusion policy models on specialized task using a Frank
 Demonstration learning has grown in popularity to illustrate how complex models can teach robots specific complex tasks through successful demonstrations. This project focused on implementing the diffusion policy developed by scientist at Columbia, MIT, and Toyota Research Institue to complete a task using the 7 Degree of Freedom Emika Franka Panda Arm (ADD LINK TO PAPER). A ROS2 frame work was developed to communicate data streams between the diffusion model and the Franka controller. The following sections will outline the various technologies used to complete this project.
 
 <br>
+
+*** Final Project Video ***
+- data collection
+- inference
 
 
 ## <u>Table of Contents</u>
@@ -63,11 +83,15 @@ Breifly mention posiiton control of the franka to explain the end effector posit
 <br>
 
 ### <u>Push T task</u>
+
+*** video of clean data collection or of paper demonstration of push t task ***
+
 <br>
 This task was chosen to see if we could successfully replicate the results from the Diffusion Policy paper cited above. In this task the robot pushes a T block into a designated goal pose. This task utilizes both camera data as well as position data streams which requires a large model specifically to handle the image inputs. Additionally, this task shows the robots ability to adapt to changing environments and perform precise movements.
 
 To condense the task, the demonstrations collected focused on correctly orienting the T block with it placed within 4 centimeters of the goal pose at various orientations up to 180 degrees. The model was trained on 101 demonstrations varying in length from 45 seconds to 2 minutes.
 
+<br>
 <center>
 <img src="{{ site.url }}{{ site.baseurl }}/inserts/dp_starting_poses.png"/>
 <figcaption style="font-size: 16px;">Training data subset of various starting poses.</figcaption>
@@ -89,6 +113,7 @@ Position control is used to command the robot arm, so the end effector of the ro
 ### <u>Collection Frameworks</u>
 <br>
 Two data collection frameworks were developed. Mouse control has the user demonstrate the task by teleoping the robot in the x and y axes with a computer mouse.
+
 The second method utilizes a novel impedance controller to remote control one robot arm with another robot arm. See the Appendix for more information on this topic
 <br>
 
@@ -98,7 +123,9 @@ The second method utilizes a novel impedance controller to remote control one ro
 
 Moveit Plan Cartesian Path and Execute Trajectory
 
-** Diagram of ROS framework: diffusion_policy, action_franka, model_input **
+** Diagram of ROS framework: diffusion_policy, action_franka, model_input, moveit **
+** Pull from rqt_tf_tree
+
 <br>
 
 ## <b>Results</b>
@@ -106,7 +133,8 @@ Moveit Plan Cartesian Path and Execute Trajectory
 <br>
 ** official model used and trained
 ** video of model running
-** image of actions commanded and franka position
+** compare models from the different collection methods
+** graphs of actions commanded and franka position
 <br>
 
 ## <b>Future Works</b>
@@ -121,9 +149,21 @@ Compare Modes:
 - friction compensation
 - damping coefficent
 
-** include diagram of equations from Modern Robotics (ADD Citations) and explain relavance
+** include diagram of equations from Modern Robotics (ADD Citations) and explain relavance (page 444 in book)
 ** locking the end effector
 ** include diagram of decreased magnitude of forces in the directions across modes
+
+<br>
+
+#### <u>Spring-Damper System<u>
+<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/spring_damper_system_image.png"/></center>
+<br>
+
+#### <u>Impendance Control Algorithm<u>
+<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/impedance_algorithm_equation.png"/></center>
+<br>
+
+
 <br>
 
 ## <b>Citations</b>

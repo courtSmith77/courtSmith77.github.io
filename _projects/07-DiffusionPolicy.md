@@ -171,6 +171,7 @@ Compare Modes:
 - jihai
 - graham
 - nick
+- modern robotics
 
 
 

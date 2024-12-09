@@ -31,6 +31,21 @@ description: Implement diffusion policy models on specialized task using a Frank
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+*** Final Project Video ***
+- data collection
+- inference
 
 
 # Demonstration Learning via Diffusion Policy
@@ -40,14 +55,9 @@ description: Implement diffusion policy models on specialized task using a Frank
 <br>
 <a href="https://github.com/courtSmith77/FrankaTeleop">Franka Arm Control Repository</a>
 
-Demonstration learning has grown in popularity to illustrate how complex models can teach robots specific complex tasks through successful demonstrations. This project focused on implementing the diffusion policy developed by scientist at Columbia, MIT, and Toyota Research Institue to complete a task using the 7 Degree of Freedom Emika Franka Panda Arm (ADD LINK TO PAPER). A ROS2 frame work was developed to communicate data streams between the diffusion model and the Franka controller. The following sections will outline the various technologies used to complete this project.
+Demonstration learning has grown in popularity to illustrate how complex models can teach robots specific complex tasks through successful demonstrations. This project focused on implementing the diffusion policy developed by scientist at Columbia, MIT, and Toyota Research Institue to complete the Push T task using the 7 degree of freedom Emika Franka Panda Arm [1]. Two data collection methods were developed for collecting training data on the Franka Panda Arm. A ROS2 frame work was developed to communicate data streams between the diffusion model and the Franka controller. The following sections will outline the various technologies used to complete this project.
 
 <br>
-
-*** Final Project Video ***
-- data collection
-- inference
-
 
 ## <u>Table of Contents</u>
 <br>
@@ -69,14 +79,10 @@ Demonstration learning has grown in popularity to illustrate how complex models 
 <a href="https://github.com/courtSmith77/diffusion_policy">Diffusion Policy Repository</a>
 <br>
 
-What is Diffusion Policy?
-Why is it relevant?
-Cite Diffusion Paper here.
+Diffusion policy in robotics refers to a technique that uses a probabilistic process to guide decision-making and control in complex environments. The model generates a sequence of actions conditioned on a series of state observations from the robot and its environment sensors. This approach is particularly useful in tasks like the Push T task, where robots  manipulate objects by pushing them in a controlled manner based on the current state of both the robot and environment. Diffusion policies enable robots to manage uncertainty and adapt in dynamic conditions.
 
-How is it utilized in the project.
-Inputs (observations)
-Outputs (actions)
-Breifly mention posiiton control of the franka to explain the end effector position as inputs and outputs
+In this project, diffusion policy was used to predict a sequence of end-effector positions in the x and y planes. The observations included the current end-effector position (x,y) and two camera images: one mounted on the end-effector and the other positioned above the table at an angle to capture the scene. End-effector position is included in both the observation and action sequences because position control was used to manipulate the robot.
+
 <br>
 
 ## <b>Data Collection</b>
@@ -84,12 +90,15 @@ Breifly mention posiiton control of the franka to explain the end effector posit
 
 ### <u>Push T task</u>
 
-*** video of clean data collection or of paper demonstration of push t task ***
+<center>
+<img src="https://courtSmith77.github.io/inserts/pusht_taskexample.gif" alt="Push T Task" />
+<figcaption style="font-size: 16px;">Demonstration of the Push T Task using Bilateral Teleop Control.</figcaption>
+</center>
 
 <br>
 This task was chosen to see if we could successfully replicate the results from the Diffusion Policy paper cited above. In this task the robot pushes a T block into a designated goal pose. This task utilizes both camera data as well as position data streams which requires a large model specifically to handle the image inputs. Additionally, this task shows the robots ability to adapt to changing environments and perform precise movements.
 
-To condense the task, the demonstrations collected focused on correctly orienting the T block with it placed within 4 centimeters of the goal pose at various orientations up to 180 degrees. The model was trained on 101 demonstrations varying in length from 45 seconds to 2 minutes.
+To condense the task, the demonstrations collected focused on correctly orienting the T block with it placed within 10 centimeters of the goal pose at various orientations up to 180 degrees. The model was trained on 101 demonstrations varying in length from 20 seconds to 2 minutes.
 
 <br>
 <center>
@@ -124,7 +133,7 @@ The second method utilizes a novel impedance controller to remote control one ro
 Moveit Plan Cartesian Path and Execute Trajectory
 
 ** Diagram of ROS framework: diffusion_policy, action_franka, model_input, moveit **
-** Pull from rqt_tf_tree
+** Pull from rqt_graph
 
 <br>
 
@@ -167,8 +176,8 @@ Compare Modes:
 <br>
 
 ## <b>Citations</b>
-- diffusion policy
-- jihai
+1. <a href="https://diffusion-policy.cs.columbia.edu/">Diffusion Policy</a>
+2. <a href="https://jihaizhao.github.io/">Jihai Zhao</a>
 - graham
 - nick
 - modern robotics

@@ -83,12 +83,12 @@ Diffusion policy in robotics refers to a technique that uses a probabilistic pro
 
 In this project, diffusion policy was used to predict a sequence of end-effector positions in the x and y planes. The observations included the current end-effector position (x,y) and two camera images: one mounted on the end-effector and the other positioned above the table at an angle to capture the scene. End-effector position is included in both the observation and action sequences because position control was used to manipulate the robot.
 
-<br>
 
 ## <b>Data Collection</b>
 <br>
 
 ### <u>Push T task</u>
+<br>
 
 <center>
 <img src="https://courtSmith77.github.io/inserts/pusht_taskexample.gif" alt="Push T Task" />
@@ -112,8 +112,14 @@ To condense the task, the demonstrations collected focused on correctly orientin
 <br>
 As mentioned above, the Push T task utilizes both image and position data as input observations. A Realsense d435 was used to capture the scene images and a Realsense d405 was used to capture the end effector images. Both cameras are run at 30 fps but are downsampled to 10 hz to match the frequency used in CITE PAPER. The scene image was cropped to exclude any extraneous objects in the image and then futher resized to decrease the model size and computation. The end effector image was resized for the same reason.
 
-##### Image Resizing
-<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/obs_data_image_resize.jpg"/></center>
+<!-- ##### Image Resizing -->
+<center>
+<h3>Image Resizing</h3>
+<figure>
+    <img src="{{ site.url }}{{ site.baseurl }}/inserts/obs_data_image_resize.jpg"/>
+    <figcaption style="font-size: 16px;">Cropping and resizing image data.</figcaption>
+</figure>
+</center>
 <br>
 
 Position control is used to command the robot arm, so the end effector of the robot is used as both an observation and action during training and only an observation during inference. The end effector position is collected from the TF tree in the ROS2 framework sampled at 10 hz.
@@ -149,29 +155,6 @@ Moveit Plan Cartesian Path and Execute Trajectory
 ## <b>Future Works</b>
 <br>
 
-<br>
-
-## <b>Appendix: Impedance Controller on Emika Panda Arm</b>
-<br>
-Compare Modes:
-- White Light mode (default)
-- friction compensation
-- damping coefficent
-
-** include diagram of equations from Modern Robotics (ADD Citations) and explain relavance (page 444 in book)
-** locking the end effector
-** include diagram of decreased magnitude of forces in the directions across modes
-
-<br>
-
-##### <u>Spring-Damper System<u>
-<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/spring_damper_system_image.png"/></center>
-<br>
-
-##### <u>Impendance Control Algorithm<u>
-<center><img src="{{ site.url }}{{ site.baseurl }}/inserts/impedance_algorithm_equation.png"/></center>
-<br>
-
 
 <br>
 
@@ -181,6 +164,7 @@ Compare Modes:
 - graham
 - nick
 - modern robotics
+- impedance controller
 
 
 

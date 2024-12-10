@@ -112,9 +112,8 @@ To condense the task, the demonstrations collected focused on correctly orientin
 <br>
 As mentioned above, the Push T task utilizes both image and position data as input observations. A Realsense d435 was used to capture the scene images and a Realsense d405 was used to capture the end effector images. Both cameras are run at 30 fps but are downsampled to 10 hz to match the frequency used in CITE PAPER. The scene image was cropped to exclude any extraneous objects in the image and then futher resized to decrease the model size and computation. The end effector image was resized for the same reason.
 
-<!-- ##### Image Resizing -->
 <center>
-<h3>Image Resizing</h3>
+<h5>Image Resizing</h5>
 <figure>
     <img src="{{ site.url }}{{ site.baseurl }}/inserts/obs_data_image_resize.jpg"/>
     <figcaption style="font-size: 16px;">Cropping and resizing image data.</figcaption>
@@ -127,9 +126,18 @@ Position control is used to command the robot arm, so the end effector of the ro
 
 ### <u>Collection Frameworks</u>
 <br>
-Two data collection frameworks were developed. Mouse control has the user demonstrate the task by teleoping the robot in the x and y axes with a computer mouse.
 
-The second method utilizes a novel impedance controller to remote control one robot arm with another robot arm. See the Appendix for more information on this topic
+Two data collection frameworks were developed. Mouse control has the user demonstrate the task by teleoping the robot in the x and y axes with a computer mouse. This approach utilizes Moveit Servo with a custom PID controller developed by  <a href="https://graham-clifford.com/Robot-Arm-Teleoperation-Through-Computer-Vision-Hand-Tracking/">Graham Clifford</a>.
+
+<br>
+
+The second method utilizes a novel impedance controller to preform bilateral control of the franka robot. While user manipulates the first robot with the impedance controller, the second franka robot immitates the movements of the first. The impedance controller was developed with <a href="https://jihaizhao.github.io/">Jihai Zhao</a>, and he also developed the pipeline for bilateral control and all protocal associated with it. Check out his implementation <a href="https://jihaizhao.github.io/linked_posts/Ergodic.html">here</a>. For more information on the impedance controller, check out <a href="https://courtsmith77.github.io/projects/08-impedancecontrol">this</a> project page.
+
+<center>
+<img src="https://courtSmith77.github.io/inserts/teleop_demo.gif" alt="Teleop Demonstration" />
+<figcaption style="font-size: 16px;">Bilateral Teleop Control using a novel impedance controller.</figcaption>
+</center>
+
 <br>
 
 ## <b>Franka Controller</b>

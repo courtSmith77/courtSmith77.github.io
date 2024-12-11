@@ -110,7 +110,7 @@ As mentioned above, the Push T task utilizes both image and position data as inp
 <center>
 <h5>Image Resizing</h5>
 <figure>
-    <img src="{{ site.url }}{{ site.baseurl }}/inserts/obs_data_image_resize.jpg"/>
+    <img src="{{ site.url }}{{ site.baseurl }}/inserts/resize_image_data.jpg"/>
     <figcaption style="font-size: 16px;">Cropping and resizing image data.</figcaption>
 </figure>
 </center>
@@ -143,7 +143,7 @@ The second method utilizes a novel impedance controller to preform bilateral con
 <img src="https://courtSmith77.github.io/inserts/diffusion_ros_framework.jpg" alt="=Diffusion Ros Framework" />
 <figcaption style="font-size: 16px;">ROS2 framework for Executing Diffusion Policy on the Franka Arm.</figcaption>
 </center>
-
+<br>
 
 This system operates as illustrated in the diagram above. Data streams are fed into the `model_input_publisher` which configures the data into the appropriate size and format for the model to receive the observations. The `action_predictor` performs the model inference and outputs an action sequence of end effector positions. Finally, the `action_franka_bridge` utilizes a MoveIt API to convert the action sequence into robot movements and executes them on the robot. The `command_mode` allows the user to enable or disable diffusion inference via keyboard input.
 

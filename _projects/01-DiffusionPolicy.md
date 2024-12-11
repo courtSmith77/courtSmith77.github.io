@@ -139,10 +139,18 @@ The second method utilizes a novel impedance controller to preform bilateral con
 <a href="https://github.com/courtSmith77/FrankaTeleop">Franka Arm Control Repository</a>
 <br>
 
-Moveit Plan Cartesian Path and Execute Trajectory
+<center>
+<img src="https://courtSmith77.github.io/inserts/diffusion_ros_framework.jpg" alt="=Diffusion Ros Framework" />
+<figcaption style="font-size: 16px;">ROS2 framework for Executing Diffusion Policy on the Franka Arm.</figcaption>
+</center>
 
-** Diagram of ROS framework: diffusion_policy, action_franka, model_input, moveit **
-** Pull from rqt_graph
+
+This system operates as illustrated in the diagram above. Data streams are fed into the `model_input_publisher` which configures the data into the appropriate size and format for the model to receive the observations. The `action_predictor` performs the model inference and outputs an action sequence of end effector positions. Finally, the `action_franka_bridge` utilizes a MoveIt API to convert the action sequence into robot movements and executes them on the robot. The `command_mode` allows the user to enable or disable diffusion inference via keyboard input.
+
+The MoveIt API utilizes the `GetCartesianPath` service and `ExecuteTrajectory` action to plan and execute the action sequences on the robot. The `GetCartesianPath` service accepts in waypoints as a list of poses and generates a `RobotTrajectory`. The` ExecuteTrajectory` action takes the `RobotTrajectory ` as input and executes it on the robot.
+
+Once the robot successfully completes the `ExecuteTrajectory` action, the `action_franka_bridge` triggers the `action_predictor` with a service to perform another diffusion inference. This process repeats until the user stops the diffusion loop using `command_mode`.
+
 
 <br>
 

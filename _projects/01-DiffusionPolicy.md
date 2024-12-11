@@ -110,8 +110,8 @@ As mentioned above, the Push T task utilizes both image and position data as inp
 <center>
 <h5>Image Resizing</h5>
 <figure>
-    <img src="{{ site.url }}{{ site.baseurl }}/inserts/resize_image_data.png"/>
-    <figcaption style="font-size: 16px;">Cropping and resizing image data.</figcaption>
+    <img src="{{ site.url }}{{ site.baseurl }}/inserts/obs_data_image_resize.png"/>
+    <figcaption style="font-size: 16px;">Cropping and resizing image data (dimensions in pixels).</figcaption>
 </figure>
 </center>
 <br>

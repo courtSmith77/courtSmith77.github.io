@@ -55,24 +55,19 @@ description: Implement diffusion policy models on specialized task using a Frank
 <br>
 <a href="https://github.com/courtSmith77/FrankaTeleop">Franka Arm Control Repository</a>
 
-Demonstration learning has grown in popularity to illustrate how complex models can teach robots specific complex tasks through successful demonstrations. This project focused on implementing the diffusion policy developed by scientist at Columbia, MIT, and Toyota Research Institue to complete the Push T task using the 7 degree of freedom Emika Franka Panda Arm [1]. Two data collection methods were developed for collecting training data on the Franka Panda Arm. A ROS2 frame work was developed to communicate data streams between the diffusion model and the Franka controller. The following sections will outline the various technologies used to complete this project.
+Demonstration learning has grown in popularity to illustrate how complex models can teach robots specific complex tasks through successful demonstrations. This project focused on implementing the <a href="https://diffusion-policy.cs.columbia.edu/">diffusion policy</a> developed by scientist at Columbia, MIT, and Toyota Research Institue to complete the Push T task using the 7 degree of freedom Emika Franka Panda Arm. Two data collection methods were developed for collecting training data on the Franka Panda Arm. A ROS2 frame work was developed to communicate data streams between the diffusion model and the Franka controller. The following sections will outline the various technologies used to complete this project.
 
 <br>
 
 ## <u>Table of Contents</u>
 <br>
+
 1. Diffusion Policy
 2. Data Collection
-    - Push T Task
-    - Data Streams
-    - Collection Frameworks
-        - Mouse Control
-        - Teleop one Robot via manipulating a Second Robot
 3. Franka Controller
 4. Results
 5. Future Works
-6. Appendix: Impendance Control on Emika Franka Panda Arm
-7. Citations
+
 <br>
 
 ## <b>Diffusion Policy</b>
@@ -110,7 +105,7 @@ To condense the task, the demonstrations collected focused on correctly orientin
 
 ### <u>Data Streams</u>
 <br>
-As mentioned above, the Push T task utilizes both image and position data as input observations. A Realsense d435 was used to capture the scene images and a Realsense d405 was used to capture the end effector images. Both cameras are run at 30 fps but are downsampled to 10 hz to match the frequency used in [1]. The scene image was cropped to exclude any extraneous objects in the image and then futher resized to decrease the model size and computation. The end effector image was resized for the same reason.
+As mentioned above, the Push T task utilizes both image and position data as input observations. A Realsense d435 was used to capture the scene images and a Realsense d405 was used to capture the end effector images. Both cameras are run at 30 fps but are downsampled to 10 hz to match the frequency used in <a href="https://diffusion-policy.cs.columbia.edu/">diffusion policy</a>. The scene image was cropped to exclude any extraneous objects in the image and then futher resized to decrease the model size and computation. The end effector image was resized for the same reason.
 
 <center>
 <h5>Image Resizing</h5>
@@ -160,19 +155,10 @@ Moveit Plan Cartesian Path and Execute Trajectory
 ** graphs of actions commanded and franka position
 <br>
 
+
 ## <b>Future Works</b>
-<br>
-
 
 <br>
-
-## <b>Citations</b>
-1. <a href="https://diffusion-policy.cs.columbia.edu/">Diffusion Policy</a>
-2. <a href="https://jihaizhao.github.io/">Jihai Zhao</a>
-- graham
-- nick
-- modern robotics
-- impedance controller
 
 
 

@@ -17,7 +17,7 @@ Through impedance control, this project aims to enhance the way people and robot
 
 <br>
 
-### <u>Impendance Control Algorithm<u>
+## Impendance Control Algorithm
 <center>
 <img src="{{ site.url }}{{ site.baseurl }}/inserts/impedance_algorithm_equation.png"/>
 <figcaption style="font-size: 14px;">Impedance control algorithm from Modern Robotics Textbook.</figcaption>
@@ -44,11 +44,11 @@ In this project, parameters M, B, and K were tuned to achieve the deisred dynami
 
 <br>
 
-### Implementation on Franka Robot
+## Implementation on Franka Robot
 In partnership with <a href="https://jihaizhao.github.io/">Jihai Zhao</a>, we implemented the impedance controller based on the C++ Libfranka library provided by Franka. We tested three different modes: damping mode, friction compensation mode, and white light mode (default). The damping mode consisted of adding an additional negative damper to increase the feeling of weightlessness when moving the robot. The friction compensation mode added a constant joint impedance to counteract the effects of friction in each joint.
 <br>
 
-### Evaluate Mode Performance
+## Evaluate Mode Performance
 
 We used the dynamics equation below to desicribe the force that the user applied at the end effector. 
 
@@ -63,6 +63,7 @@ f(t) = m * a(t) - c * v(t)
 
 
 Using an Axia80-M8 force-torque sensor to measure the force and torque each user applied, we could back calculate the estimated m and c for each mode. Ideally, the best mode should have a relatively small m and c, stable performance in all directions, and close to equivalent m and c values. Based on those conditions, damping mode in performs the best.
+<br>
 
 | Condition               | Axis | m             | c             |
 |--------------------------|------|---------------|---------------|

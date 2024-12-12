@@ -1,6 +1,6 @@
 ---
 name: Impedance Controller on 7 DOF Robot Arm
-tools: [C++, ROS2, Libfranka]
+tools: [C++, libfranka]
 image: https://courtSmith77.github.io/inserts/impedance_thumbnail.gif
 description: Developed and Implemented novel impedance controller on Franka Panda Arm.
 ---

@@ -52,7 +52,7 @@ In partnership with <a href="https://jihaizhao.github.io/">Jihai Zhao</a>, we im
 
 We used the dynamics equation below to desicribe the force that the user applied at the end effector. 
 
-$$f(t) = m \cdot a(t) - c \cdot v(t)$$
+f(t) = m * a(t) - c * v(t)
 
 <br>
 

@@ -47,6 +47,15 @@ description: Developed and Implemented novel impedance controller on Franka Pand
 
 # <b>Impedance Controller on Emika Panda Arm</b>
 <br>
+
+## Overview
+In modern robotics, developing seamless human-robot interactions is key to making robot more intuitive and easy for humans to adapt to using. This project focuses on implementing impedance control for an Franka Emika Panda Robot Arm to make it more compliant and easier to guide by hand. By designing an impedance model, the system can adjust how the robot responds to user input, enabling smooth and effortless movements
+
+The Franka Emika Panda Robot Arm is known for its precision and advanced control features. The goal of this project is develop a impedance control system that minimizes user effort while keeping the arm stable and responsive. This involves fine-tuning the virtual mass, damping, and stiffness coefficients to balance flexibility and accuracy.
+
+Through impedance control, this project aims to enhance the way people and robots work together, making it ideal for hands-on tasks like collaborative work. Check out this controller being used for data collection in <a href="https://courtsmith77.github.io/projects/01-diffusionpolicy">this</a> project.
+
+
 Compare Modes:
 - White Light mode (default)
 - friction compensation

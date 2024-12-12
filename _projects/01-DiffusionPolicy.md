@@ -5,12 +5,7 @@ image: https://courtSmith77.github.io/inserts/diffusion_thumbnail.gif
 description: Implement diffusion policy models on specialized task using a Franka Panda Arm.
 ---
 
-# Under Construction, will be done by 12/12/2024
-
-*** Final Project Video ***
-- data collection
-- inference
-
+<center><iframe width="567" height="504" src="https://www.youtube.com/embed/Eey6MCQP1fo?si=vkhXDw02OkKrk4kz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
 # Demonstration Learning via Diffusion Policy
 <br>

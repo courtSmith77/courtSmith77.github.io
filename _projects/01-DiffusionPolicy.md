@@ -116,17 +116,53 @@ Once the robot successfully completes the `ExecuteTrajectory` action, the `actio
 
 ## <b>Results</b>
 
+Various models were trained using data from both data collection methods. When executed on the robot, the end effector followed the desired action sequence with errors averaging ~ 3.31 mm. The following graph shows the predicted action horizon, the select action sequence to be executed, and the end effector position throughout the trial.
+
+
+<center>
+<img src="https://courtSmith77.github.io/inserts/ah_video.gif" alt="Action Horizon Video" />
+</center>
+
+<center>
+<img src="https://courtSmith77.github.io/inserts/action_horizon.png" alt="=Action Horizon Graph" />
+<figcaption style="font-size: 12px;">The left shows the full action horizon from the diffusion model whereas the right shows the actions executed on the robot. The black dots represent the end effector position.</figcaption>
+</center>
 <br>
-** official model used and trained
-** video of model running
-** compare models from the different collection methods
-** graphs of actions commanded and franka position
+
+
+In the example above, the model hangs at one stop at the end of the video. This behavior can be seen across many of the trained models and various dataset. After futher investigation we are able to see that our models are extremely overfitting when run at many epochs unlike what is seen in the Diffusion Policy paper. Below are some training loss and value loss graphs from our trained models.
+
+<center>
+<img src="https://courtSmith77.github.io/inserts/epoch_loss.png" alt="=Epoch Loss Graph" />
+<figcaption style="font-size: 12px;">The loss after each epoch. These models begin to overfit after just 20 epochs.</figcaption>
+</center>
 <br>
+
+
+In the end, three different datasets were used to train models:
+1. Mouse Control (MC) Dataset - 101 demonstrations
+2. Bilateral Impedance Control (BIC) Dataset- 100 demonstrations
+3. Combined Dataset - 201 demonstrations
+
+Based on the data collection process, I hypothesized that the model trained on the BIC dataset would perform the best because of the ease and smoothness during collection in contrast to the MC's jerkiness. I also hypothesized that the combined dataset would perform better than the MC but worse than the BIC because it would include more demonstrations decreasing the risk of overfitting.
+
+The results were surprising. The MC model performed the best with the least overfitting and the most adaptive model. The model successfully completed the task once complete time as sceen in the video below. Other times, the robot would complete one push then hang when moving to complete the next. The BIC and Combined models on the otherhand performed very similarly. Both models were extremely overfit even when trained on only 20 epochs in contrast to the 2000 epochs the Diffusion Paper did. Each model would proceed to the same end position no matter the initial robot or T configuration.
+
+
+<center>
+<img src="https://courtSmith77.github.io/inserts/diffusion_thumbnail.gif" alt="Push T Success" />
+<figcaption style="font-size: 16px;">Successful Push T task using an MC trained model.</figcaption>
+</center>
 
 
 ## <b>Future Works</b>
 
+The future of demoonstration learning in robotics will heavily involve the use of diffusion models. To continue the work that has been done, it would be great to continue to explore the training proceedure to understand why 200 demonstrations are being overfit after only 20 epochs. Once the training and all demonstration policy hyperparameters are properly tuned, it would be interesting to revisit the topic of data collection methods and how each one impacts the quality of data and the subsequently trained models. Diving futher into the data collection modes, utilizing haptic feedback with the BIC method could provide users a better experience and improve data collection even further.
+
+
 <br>
 
+
+Thank you to my peer Jihai Zhao for being a great partner in developing the Impedance Controller and a great mind to bounce ideas off of. I'd also like to thank Matthew Elwin for all the guidance and insight throughout the project.
 
 

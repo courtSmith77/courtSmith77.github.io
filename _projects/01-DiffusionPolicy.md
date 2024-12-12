@@ -12,7 +12,7 @@ description: Implement diffusion policy models on specialized task using a Frank
 <!-- hyperlink to github -->
 <a href="https://github.com/courtSmith77/diffusion_policy">Diffusion Policy Repository</a>
 <br>
-<a href="https://github.com/courtSmith77/FrankaTeleop">Franka Arm Control Repository</a>
+<a href="https://github.com/courtSmith77/FrankaDiffusionPolicy">Franka Arm Control Repository</a>
 
 Demonstration learning has grown in popularity to illustrate how complex models can teach robots specific complex tasks through successful demonstrations. This project focused on implementing the <a href="https://diffusion-policy.cs.columbia.edu/">diffusion policy</a> developed by scientist at Columbia, MIT, and Toyota Research Institue to complete the Push T task using the 7 degree of freedom Emika Franka Panda Arm. Two data collection methods were developed for collecting training data on the Franka Panda Arm. A ROS2 frame work was developed to communicate data streams between the diffusion model and the Franka controller. The following sections will outline the various technologies used to complete this project.
 
@@ -97,7 +97,7 @@ From a users perspective, the bilateral teleop control was much easier to contro
 
 
 ## <b>Franka Controller</b>
-<a href="https://github.com/courtSmith77/FrankaTeleop">Franka Arm Control Repository</a>
+<a href="hhttps://github.com/courtSmith77/FrankaDiffusionPolicy">Franka Arm Control Repository</a>
 <br>
 
 <center>

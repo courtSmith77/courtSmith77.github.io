@@ -90,18 +90,16 @@ When training demonstration learning models, it has been shown that few excellen
 
 The first method utilized mouse control where the user demonstrates the task by teleoping the robot in the x and y axes with a computer mouse. This approach utilizes Moveit Servo with a custom PID controller developed by  <a href="https://graham-clifford.com/Robot-Arm-Teleoperation-Through-Computer-Vision-Hand-Tracking/">Graham Clifford</a>.
 
-<br>
-
 The second method utilizes a novel impedance controller to preform bilateral control of the franka robot. While a user manipulates the first robot with the impedance controller, the second franka robot immitates the movements of the first. The impedance controller was developed with <a href="https://jihaizhao.github.io/">Jihai Zhao</a>, and he also developed the pipeline for bilateral control and all protocal associated with it. Check out his implementation <a href="https://jihaizhao.github.io/linked_posts/Ergodic.html">here</a>. For more information on the impedance controller, check out <a href="https://courtsmith77.github.io/projects/08-impedancecontrol">this</a> project page.
 
 <center>
 <img src="https://courtSmith77.github.io/inserts/teleop_demo.gif" alt="Teleop Demonstration" />
 <figcaption style="font-size: 16px;">Bilateral Teleop Control using a novel impedance controller.</figcaption>
 </center>
+<br>
 
 From a users perspective, the bilateral teleop control was much easier to control and manipulate. Additionally, the franka movements were smoother and maintained a set z height better than the mouse control. However, in the mouse control, the end effector was perfectly locked to the optimal orientation whereas in the teleop control, the user had to consciously maintain this locked orientation. 
 
-<br>
 
 ## <b>Franka Controller</b>
 <a href="https://github.com/courtSmith77/FrankaTeleop">Franka Arm Control Repository</a>

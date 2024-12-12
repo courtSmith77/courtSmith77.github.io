@@ -54,6 +54,14 @@ We used the dynamics equation below to desicribe the force that the user applied
 
 $$f(t) = m \cdot a(t) - c \cdot v(t)$$
 
+<br>
+
+<center>
+<img src="{{ site.url }}{{ site.baseurl }}/inserts/force_controller.png"/>
+<figcaption style="font-size: 14px;">Force-torque sensor and custom end effector handle.</figcaption>
+</center>
+
+
 Using an Axia80-M8 force-torque sensor to measure the force and torque each user applied, we could back calculate the estimated m and c for each mode. Ideally, the best mode should have a relatively small m and c, stable performance in all directions, and close to equivalent m and c values. Based on those conditions, damping mode in performs the best.
 
 | Condition               | Axis | m             | c             |

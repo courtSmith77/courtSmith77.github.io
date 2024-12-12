@@ -151,7 +151,6 @@ The MoveIt API utilizes the `GetCartesianPath` service and `ExecuteTrajectory` a
 
 Once the robot successfully completes the `ExecuteTrajectory` action, the `action_franka_bridge` triggers the `action_predictor` with a service to perform another diffusion inference. This process repeats until the user stops the diffusion loop using `command_mode`.
 
-
 <br>
 
 ## <b>Results</b>
